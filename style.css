@@ -2,9 +2,6 @@
   margin: 0;
   padding: 0;
 }
-.top-nav nav ul li a{
- text-decoration: none;
-}
 body {
   background: #efefef;
   color:black;
@@ -155,4 +152,7 @@ ul {
 }
 .media a:hover{
   background: #cf5d5f;
+}
+a{
+  text-decoration: none;
 }
