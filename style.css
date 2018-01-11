@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-a{
+.top-card nav ul li a{
   text-decoration: none;
 }
 body {
