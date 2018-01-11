@@ -1,10 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
-  background: black;
-  color: white;
+  background: #efefef;
+  color:black;
   margin: 0;
 }
-a {
-  color: white;
+.botton{
+  color:black;
   text-decoration: none;
 }
 ul {
@@ -50,7 +54,102 @@ ul {
 }
 .logo .card {
   color: #9a9da2;
+
 }
 .top-nav {
   margin-top: 23px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.banner{
+  height: 515px;
+  background-image: url(./img/bg.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.mask{
+  height: 515px;
+  background-color: rgba(0,0,0,0.8)
+}
+.userCard{
+  max-width: 940px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+.welcome{
+  background-color: #e6686a;
+  color: white;
+  display: inline-block;
+  padding: 4px 16px;
+  line-height: 21px;
+  position: relative;
+  margin-bottom: 26px;
+}
+.welcome .triangle{
+  border:10px solid transparent;
+  width:0px;
+  border-left-color:#e6686a;
+  border-top-width:0px;
+  display: block;
+  position: absolute;
+  left: 4px;
+  top: 100%;
+}
+.avatar{
+  float: left;
+}
+.text{
+  float: left;
+  padding-left: 65px;
+  width: 470px;
+}
+.top-card {
+  padding: 57px 51px;
+}
+.text h1{
+  margin-bottom: 5px;
+}
+.text p{
+  margin-bottom: 28px;
+}
+.text hr{
+  border: none;
+  border-top: 1px solid #dedede;
+  margin: 28px 0;
+}
+.text dt,.text dd{
+  float: left;
+  padding: 8px 0;
+}
+.text dt{
+  width: 30%;
+  font-weight: bold;
+}
+.text dd{
+  width: 70%;
+  color: #9da0a7
+}
+.media{
+  background: #e6686a;
+  text-align: center;
+}
+.media svg{
+  height: 30px;
+  width: 30px;
+  fill: white;
+  vertical-align: top;
+}
+.media a{
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 30px;
+  width: 40px;
+  padding: 5px 0;
+  margin: 0 16px;
+}
+.media a:hover{
+  background: #cf5d5f;
 }

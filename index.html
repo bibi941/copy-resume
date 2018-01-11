@@ -7,12 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>copy-resume</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="//at.alicdn.com/t/font_537695_th358ykrbhz7iudi.js"></script>
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
 </head>
 
 <body>
     <div class="top-nav clearfix">
         <div class="logo">
-            <span class="rs">RS</span><span class="card">card</span>
+            <span class="rs">RS</span>
+            <span class="card">card</span>
         </div>
         <nav>
             <ul class="clearfix">
@@ -40,13 +51,18 @@
             </ul>
         </nav>
     </div>
-    <div class="card">
-        <div class="top-card">
-            <div class="photo">
-                <img src="#" alt="照片">
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
+    <div class="userCard">
+        <div class="top-card clearfix">
+            <div class="avatar">
+                <img src="./img/avatar.jpg" alt="照片">
             </div>
             <div class="text">
-                <span class="welcome">hello</span>
+                <span class="welcome">hello
+                    <span class="triangle"></span>
+                </span>
                 <h1>方应杭</h1>
                 <p>前端开发工程师</p>
                 <hr>
@@ -64,22 +80,24 @@
         </div>
         <div class="media">
             <a href="#">
-                <img src="#" alt="twitter">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-ins"></use>
+                </svg>
             </a>
             <a href="#">
-                <img src="#" alt="facebook">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weixin"></use>
+                </svg>
             </a>
             <a href="#">
-                <img src="#" alt="buzhidao">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
             </a>
             <a href="#">
-                <img src="#" alt="ins">
-            </a>
-            <a href="#">
-                <img src="#" alt="buzhidao">
-            </a>
-            <a href="#">
-                <img src="#" alt="google">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
             </a>
         </div>
     </div>
