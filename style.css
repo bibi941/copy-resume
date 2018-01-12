@@ -1,15 +1,37 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 body {
   background: #efefef;
-  color:black;
+  color: black;
   margin: 0;
 }
-.botton{
-  color:black;
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+.botton {
+  color: black;
   text-decoration: none;
+  font-size: 15px;
+  padding: 21px 55px;
+  display: inline-block;
+  border: 1px solid #cdcfd1;
+  border-radius: 2px;
+  line-height: 16px;
+  color: #3d4451;
+  font-weight: bold;
+  margin-top: 35px;
+  transition: box-shadow 0.3s;
 }
 ul {
   list-style: none;
@@ -28,7 +50,7 @@ ul {
 }
 .top-nav nav {
   float: right;
-  margin:7px 16px 6px 0;
+  margin: 7px 16px 6px 0;
 }
 .logo {
   float: left;
@@ -54,7 +76,6 @@ ul {
 }
 .logo .card {
   color: #9a9da2;
-
 }
 .top-nav {
   margin-top: 23px;
@@ -63,22 +84,23 @@ ul {
   left: 0;
   width: 100%;
 }
-.banner{
+.banner {
   height: 515px;
   background-image: url(./img/bg.jpg);
   background-position: center center;
   background-size: cover;
 }
-.mask{
+.mask {
   height: 515px;
-  background-color: rgba(0,0,0,0.8)
+  background-color: rgba(0, 0, 0, 0.8);
 }
-.userCard{
+.userCard {
   max-width: 940px;
   margin: 0 auto;
   background-color: #ffffff;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
 }
-.welcome{
+.welcome {
   background-color: #e6686a;
   color: white;
   display: inline-block;
@@ -86,21 +108,23 @@ ul {
   line-height: 21px;
   position: relative;
   margin-bottom: 26px;
+  font-size: 14px;
+  font-weight: bold;
 }
-.welcome .triangle{
-  border:10px solid transparent;
-  width:0px;
-  border-left-color:#e6686a;
-  border-top-width:0px;
+.welcome .triangle {
+  border: 10px solid transparent;
+  width: 0px;
+  border-left-color: #e6686a;
+  border-top-width: 0px;
   display: block;
   position: absolute;
   left: 4px;
   top: 100%;
 }
-.avatar{
+.avatar {
   float: left;
 }
-.text{
+.text {
   float: left;
   padding-left: 65px;
   width: 470px;
@@ -108,40 +132,42 @@ ul {
 .top-card {
   padding: 57px 51px;
 }
-.text h1{
+.text h1 {
   margin-bottom: 5px;
 }
-.text p{
+.text p {
   margin-bottom: 28px;
 }
-.text hr{
+.text hr {
   border: none;
   border-top: 1px solid #dedede;
   margin: 28px 0;
 }
-.text dt,.text dd{
+.text dt,
+.text dd {
   float: left;
   padding: 8px 0;
 }
-.text dt{
+.text dt {
   width: 30%;
   font-weight: bold;
 }
-.text dd{
+.text dd {
   width: 70%;
-  color: #9da0a7
+  color: #9da0a7;
 }
-.media{
+.media {
   background: #e6686a;
   text-align: center;
+  padding: 22.5px 0;
 }
-.media svg{
+.media svg {
   height: 30px;
   width: 30px;
   fill: white;
   vertical-align: top;
 }
-.media a{
+.media a {
   text-decoration: none;
   display: inline-block;
   border-radius: 50%;
@@ -150,9 +176,125 @@ ul {
   padding: 5px 0;
   margin: 0 16px;
 }
-.media a:hover{
+.media a:hover {
   background: #cf5d5f;
 }
-a{
+a {
   text-decoration: none;
+}
+.botton-wrappe {
+  text-align: center;
+}
+.userCard {
+  margin-top: -346px;
+}
+.botton:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.introduction {
+  max-width: 940px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 45px;
+  font-size: 20px;
+}
+.sk1,
+.portfolio {
+  max-width: 940px;
+  margin: 35px auto 0;
+}
+.sk1 h2,
+.portfolio h2 {
+  text-align: center;
+  color: #3d4451;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-top: 60px;
+}
+.sk1 ol {
+  background: white;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  padding: 47px 57px 6px;
+  margin-top: 32px;
+}
+.sk1 ol li .progressBar {
+  height: 5px;
+  background: #fae1e1;
+  border-radius: 2px;
+  margin: 4px 0 48px;
+}
+.sk1 ol li .progressBar .progress {
+  background: #e6686a;
+  width: 70%;
+  height: 100%;
+  border-radius: 2px;
+}
+.sk1 ol li {
+  float: left;
+  width: 48%;
+  box-sizing: border-box;
+}
+.sk1 ol li h3 {
+  font-size: 14px;
+  line-height: 1.1;
+  padding-right: 40px;
+}
+.sk1 ol li:nth-child(even) {
+  float: right;
+}
+.portfolio nav ol li {
+  float: left;
+  margin-left: 40px;
+  cursor: pointer;
+}
+.portfolio nav ol {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 38px;
+}
+.portfolio nav {
+  display: inline-block;
+  vertical-align: top;
+}
+.portfolio nav ol li:first-child {
+  margin-left: 0;
+}
+.portfolio nav .bar {
+  height: 5px;
+  background: white;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  border-radius: 2px;
+}
+.portfolio {
+  text-align: center;
+}
+.bar-inner {
+  height: 100%;
+  background: #e6686a;
+  width: 10%;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.bar.state-1 .bar-inner {
+  margin-left: 0;
+  width: 34px;
+}
+.bar.state-2 .bar-inner {
+  margin-left: 73px;
+  width: 33px;
+}
+.bar.state-3 .bar-inner {
+  margin-left: 145px;
+  width: 90px;
+}
+.works {
+  position: relative;
+  margin-top: -12px;
+  margin-bottom: 100px;
+}
+.works .big,
+.works .small {
+  position: absolute;
 }
