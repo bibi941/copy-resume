@@ -6,45 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>copy-resume</title>
+    <link rel="stylesheet" href="./loading.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <div class="welcometoHTML active" id="siteWelcome">
+        <div class="loading"></div>
+    </div>
     <div id="topNavbar" class="top-nav clearfix">
         <div class="logo">
-            <span class="rs">RS</span><span class="card">card</span>
+            <span class="rs">RS</span>
+            <span class="card">card</span>
         </div>
         <nav>
             <ul class="clearfix">
-                <li>
-                    <a href="#">关于</a>
+                <li class="menuTigger">
+                    <a href="#siteAbout">关于</a>
                 </li>
-                <li>
-                    <a href="#">技能</a>
+                <li class="menuTigger">
+                    <a href="#siteSkills">技能</a>
                 </li>
-                <li>
-                    <a href="#" class="menuTigger">作品</a>
-                    <ul class="submenu" id="submenu">
+                <li class="menuTigger">
+                    <a href="#siteWorks">作品</a>
+                    <ul class="submenu " id="submenu">
                         <li>作品1</li>
                         <li>作品2</li>
                         <li>作品3</li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#" class="menuTigger"  >博客</a>
+                <li class="menuTigger">
+                    <a href="#">博客</a>
                     <ul class="submenu" id="submenu">
                         <li>博客1</li>
                         <li>博客2</li>
                         <li>博客3</li>
                     </ul>
                 </li>
-                <li>
+                <li class="menuTigger">
                     <a href="#">日历</a>
                 </li>
-                <li>
+                <li class="menuTigger">
                     <a href="#">联系方式</a>
                 </li>
-                <li>
+                <li class="menuTigger">
                     <a href="#">其他</a>
                 </li>
             </ul>
@@ -53,7 +58,7 @@
     <div class="banner">
         <div class="mask"></div>
     </div>
-    <div class="userCard">
+    <div class="userCard" id="siteAbout">
         <div class="top-card clearfix">
             <div class="avatar">
                 <img src="./img/avatar.jpg" alt="照片">
@@ -109,7 +114,7 @@
         </p>
     </div>
     <div class="skills">
-        <section class="sk1">
+        <section class="sk1" id="siteSkills">
             <h2>技能</h2>
             <ol class="clearfix">
                 <li>
@@ -151,7 +156,7 @@
 
             </ol>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="siteWorks">
             <h2>作品集</h2>
             <nav>
                 <ol class="clearfix">

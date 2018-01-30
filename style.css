@@ -76,7 +76,7 @@ a {
   padding-right: 999px;
   font-family: 'Open Sans';
 }
-.top-nav nav ul li a:hover::after {
+.top-nav nav ul li.active > a::after {
   content: '';
   display: block;
   position: absolute;
@@ -95,17 +95,34 @@ a {
     width: 100%;
   }
 }
-.submenu{
+.menuTigger {
+  padding-bottom: 20px;
+}
+.submenu {
   display: none;
   position: absolute;
-  left: 0;
+  right: 0;
   top: 100%;
+  background: white;
+  color: #3d4451;
+  margin-top: -14px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  animation: submenuSlide 0.3s;
 }
-.submenu.active{
+@keyframes submenuSlide {
+  0% {
+    margin-right: 100%;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+.top-nav li.active > .submenu {
   display: block;
 }
-.submenu li{
+.submenu li {
   white-space: nowrap;
+  padding: 10px 10px;
 }
 .top-nav > nav > ul > li {
   float: left;
