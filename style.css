@@ -40,20 +40,15 @@ a {
   display: block;
   clear: both;
 }
-.botton {
-  color: black;
-  text-decoration: none;
-  font-size: 15px;
-  padding: 21px 55px;
-  display: inline-block;
-  border: 1px solid #cdcfd1;
-  border-radius: 2px;
-  line-height: 16px;
-  color: #3d4451;
-  font-weight: bold;
-  margin-top: 35px;
-  transition: box-shadow 0.3s;
+
+[target-anchor].offset {
+  transform: translateY(100px);
 }
+[target-anchor] {
+  transform: translateY(0);
+  transition: all 0.5s;
+}
+
 .top-nav {
   padding-top: 20px;
   position: fixed;
@@ -76,7 +71,8 @@ a {
   padding-right: 999px;
   font-family: 'Open Sans';
 }
-.top-nav nav ul li.active > a::after {
+.top-nav nav ul li.active > a::after,
+.top-nav nav ul li.highlight a::after {
   content: '';
   display: block;
   position: absolute;
@@ -87,6 +83,7 @@ a {
   background: #e6686a;
   animation: menuSlide 0.3s;
 }
+
 @keyframes menuSlide {
   0% {
     width: 0;
@@ -262,6 +259,20 @@ a {
 .userCard {
   margin-top: -346px;
 }
+.botton {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 21px 55px;
+  display: inline-block;
+  border: 1px solid #cdcfd1;
+  border-radius: 2px;
+  line-height: 16px;
+  color: #3d4451;
+  font-weight: bold;
+  margin-top: 35px;
+  transition: box-shadow 0.3s;
+}
 .botton:hover {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
 }
@@ -297,12 +308,18 @@ a {
   background: #fae1e1;
   border-radius: 2px;
   margin: 4px 0 48px;
+  overflow: hidden;
 }
 .sk1 ol li .progressBar .progress {
   background: #e6686a;
   width: 70%;
   height: 100%;
   border-radius: 2px;
+  transform: translateX(0);
+  transition: all 1s;
+}
+.sk1.offset ol li .progressBar .progress {
+  transform: translateX(-100%);
 }
 .sk1 ol li {
   float: left;
