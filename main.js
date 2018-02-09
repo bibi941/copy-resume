@@ -1,6 +1,6 @@
 add_offset()
 
-getCurrtentWindow()//为了remove第一个offsety以及取到当前窗口dom
+getCurrtentWindow() //为了remove第一个offsety以及取到当前窗口dom
 
 stickyTopBar_And_highlight()
 
@@ -17,6 +17,7 @@ function add_offset() {
   }
 }
 
+
 function getCurrtentWindow() {
   let target_anchor = document.querySelectorAll('[target-anchor]')
   let minIndex = 0
@@ -29,7 +30,7 @@ function getCurrtentWindow() {
   let a = document.querySelector('a[href="#' + id + '"]')
   let li = a.parentNode
   let brothersAndMe = li.parentNode.children //所有li包括自己
-  
+
   for (let i = 0; i < brothersAndMe.length; i++) {
     brothersAndMe[i].classList.remove('highlight')
   }
