@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>copy-resume</title>
     <link rel="stylesheet" href="./loading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
     <link rel="stylesheet" href="./style.css">
+
+
 </head>
 
 <body>
@@ -110,7 +113,7 @@
             <br> 技能：前端开发，Rails 开发，Node.js 开发
         </p>
     </div>
-    <div class="skills">
+    <div class="skills clearfix">
         <section target-anchor class="sk1" id="siteSkills">
             <h2>技能</h2>
             <ol class="clearfix">
@@ -166,19 +169,24 @@
                 </div>
             </nav>
 
-            <div class="works" style="height:597px;">
-                <div class="big" style="top:0;left:0;">
-                    <img src="./img/1.jpg" alt="作品1" width="606" height="597">
-                </div>
-                <div class="small" style="top:0;left:645px;">
-                    <img src="./img/2.jpg" alt="作品2" width="293" height="285">
-                </div>
-                <div class="small" style="top:312px;left:645px">
-                    <img src="./img/3.jpg" alt="作品3" width="293" height="285">
-                </div>
-            </div>
+
         </section>
     </div>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <img class="swiper-slide" src="./img/1.jpg">
+            <img class="swiper-slide" src="/img/2.jpg">
+            <img class="swiper-slide" src="/img/3.jpg">
+        </div>
+     
+    </div>
+    <div class="swiper-button-prev swiper-button-black"></div>
+    <div class="swiper-button-next swiper-button-black"></div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
     <script src="https://cdn.bootcss.com/tween.js/r14/Tween.js"></script>
     <script src="./main.js"></script>
     <script src="//at.alicdn.com/t/font_537695_th358ykrbhz7iudi.js"></script>
