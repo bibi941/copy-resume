@@ -117,3 +117,4 @@ function portfolio_animation() {
         portfolioBar.className = 'bar state-3'
     }
 }
+
