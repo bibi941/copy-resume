@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>copy-resume</title>
-    <link rel="stylesheet" href="./loading.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -179,8 +178,18 @@
         <div class="swiper-button-prev swiper-button-black"></div>
         <div class="swiper-button-next swiper-button-black"></div>
     </div>
+    <section class="message">
+        <h2>留言板</h2>
+        <ol id="messageList"></ol>
+        <form id="postMessageForm" style="width: 700px;margin: 150px auto 50px auto;">
+            <input type="text" name="name" placeholder="姓名">
+            <input type="text" name="content" placeholder="请输入您的留言">
+            <input type="submit" value="提交">
+        </form>
+    </section>
 
-
+    <script src="//cdn1.lncld.net/static/js/3.6.0/av-min.js"></script>
+    <script src="./js/message.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
     <script src="https://cdn.bootcss.com/tween.js/r14/Tween.js"></script>
     <script src="./js/main.js"></script>
