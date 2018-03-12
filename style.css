@@ -360,33 +360,7 @@ a {
 .sk1 ol li:nth-child(even) {
     float: right;
 }
-.portfolio nav ol li {
-    float: left;
-    margin-left: 40px;
-    cursor: pointer;
-}
-.portfolio nav ol {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 38px;
-}
-.portfolio nav {
-    display: inline-block;
-    vertical-align: top;
-}
-.portfolio nav ol li:first-child {
-    margin-left: 0;
-}
-.portfolio nav .bar {
-    height: 5px;
-    background: white;
-    margin-top: 5px;
-    margin-bottom: 40px;
-    border-radius: 2px;
-}
-.portfolio {
-    text-align: center;
-}
+
 .bar-inner {
     height: 100%;
     background: #e6686a;
@@ -394,18 +368,7 @@ a {
     border-radius: 2px;
     transition: 0.3s;
 }
-.bar.state-1 .bar-inner {
-    margin-left: 0;
-    width: 34px;
-}
-.bar.state-2 .bar-inner {
-    margin-left: 73px;
-    width: 33px;
-}
-.bar.state-3 .bar-inner {
-    margin-left: 145px;
-    width: 90px;
-}
+
 section.message > ol {
     max-width: 940px;
     margin: 0 auto;

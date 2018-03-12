@@ -1,29 +1,7 @@
 ! function () {
-    let view = document.querySelector('section.message')
-    let model = {
-        init: function () {
-            var APP_ID = '0SWnlB3MG4l9qlwGbDyIK0u0-gzGzoHsz'
-            var APP_KEY = 'DYXIwmP1bydIyc24FE8VCb4V'
-            AV.init({
-                appId: APP_ID,
-                appKey: APP_KEY
-            })
-        },
-        //get数据
-        get: function () {
-            var query = new AV.Query('Message')
-            return query.find() //promise
-        },
-        //save数据
-        save: function (name, content) {
-            var Message = AV.Object.extend('Message')
-            var message = new Message()
-            return message.save({ //promise
-                name: name,
-                content: content
-            })
-        }
-    }
+    let view = View('section.message')
+    let model = Model({resourceName:'Message'})
+    
     let controller = {
         view: null,
         init: function (view, model) {
@@ -66,7 +44,7 @@
             let myForm = this.form
             let content = myForm.querySelector('input[name=content]').value
             let name = myForm.querySelector('input[name=name]').value
-            this.model.save(name, content).then(
+            this.model.save({name:name,content:content}).then(
                 function (object) {
                     let li = document.createElement('li')
                     li.innerText = `${object.attributes.name}:${
